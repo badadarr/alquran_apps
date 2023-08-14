@@ -6,7 +6,6 @@ import 'package:http/http.dart' as http;
 
 class HomeController extends GetxController {
   //TODO: Implement HomeController
-
   Future<List<SurahModel>> getAllSurah() async {
     Uri url = Uri.parse('https://api.quran.gading.dev/surah');
     var res = await http.get(url);
