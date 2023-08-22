@@ -51,8 +51,8 @@ class DetailSurahView extends GetView<DetailSurahController> {
           ),
           SizedBox(height: 20),
           // membuat list ayat
-          FutureBuilder<detailModel.Data>(
-            future: controller.getDetailSurah(surah.number.toString()),
+          FutureBuilder<detailModel.DetailSurahModel>(
+            // future: controller.getDetailSurah(surah.number.toString()),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return Center(
